@@ -6,72 +6,71 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Você está se sentindo desanimado e sem vontade de fazer as coisas que você costumava gostar. Você se isola cada vez mais e tem dificuldade de se concentrar. O que você faz?",
+        enunciado: "Você nota um desânimo profundo, perda de interesse em atividades que amava e extrema dificuldade de concentração. O isolamento tem se tornado constante. Como decide agir?",
         alternativas: [
             {
-                texto: "Ignora seus sentimentos e tenta seguir com sua vida normal.",
-                afirmacao: "Continuei me sentindo cada vez pior e minha saúde mental se deteriorou. Precisei de ajuda profissional para lidar com a depressão. "
+                texto: "Tenta ignorar os sentimentos e força a barra para manter a rotina como se nada estivesse acontecendo.",
+                afirmacao: "Ao reprimir seus sentimentos, o peso emocional se acumulou e o esgotamento se tornou inevitável. "
             },
             {
-                texto: "Reconhece que algo está errado e busca ajuda profissional de um psicólogo ou psiquiatra.",
-                afirmacao: "Procurei ajuda profissional e, com o apoio de um psicólogo, aprendi a lidar com meus sentimentos e melhorei minha qualidade de vida."
+                texto: "Reconhece o momento vulnerável e busca ajuda profissional com um psicólogo ou psiquiatra.",
+                afirmacao: "Reconhecer sua vulnerabilidade e buscar ajuda profissional permitiu desenvolver ferramentas saudáveis de autocuidado. "
             }
         ]
     },
     {
-        enunciado: "Você percebe que um amigo está se comportando de forma estranha e agressiva. Ele tem ataques de raiva frequentes e faz comentários ofensivos. Você se preocupa com ele e quer ajudá-lo. O que você faz?",
+        enunciado: "Um amigo próximo demonstra comportamentos atípicos, episódios de raiva e isolamento frequente. Você percebe o sofrimento dele. O que faz?",
         alternativas: [
             {
-                texto: "Ignora o comportamento do seu amigo e finge que não está acontecendo nada.",
-                afirmacao: "Ignorei os sinais e meu amigo acabou se isolando ainda mais e se tornando ainda mais agressivo. Me arrependo de não ter feito nada para ajudá-lo."
+                texto: "Prefere não se envolver, acreditando que ele resolverá a situação sozinho no tempo dele.",
+                afirmacao: "A falta de apoio acabou aprofundando o isolamento do seu amigo, tornando a recuperação mais difícil. "
             },
             {
-                texto: "Conversa com ele sobre como está se sentindo e oferece apoio emocional, sugerindo que ele procure ajuda profissional de um psicólogo ou psiquiatra.",
-                afirmacao: "Conversei com meu amigo e ele se abriu comigo sobre seus problemas. Ofeci meu apoio e o incentivei a buscar ajuda profissional. Fiquei feliz em poder ajudá-lo a dar o primeiro passo para cuidar da sua saúde mental."
+                texto: "Abre um espaço seguro para conversar, oferece escuta empática e sugere o acompanhamento de um profissional.",
+                afirmacao: "Ao oferecer uma escuta sem julgamentos, você ajudou seu amigo a dar o primeiro passo para cuidar da própria mente. "
             }
         ]
     },
     {
-        enunciado: "Você está em um relacionamento e percebe que seu parceiro está te controlando e te isolando de seus amigos e familiares. Você se sente pressionado a fazer tudo o que ele quer e tem medo de dizer não. O que você faz?",
+        enunciado: "Em um relacionamento, você percebe comportamentos de controle, manipulação e o afastamento progressivo de amigos e familiares. Qual o seu posicionamento?",
         alternativas: [
             {
-                texto: "Continua no relacionamento mesmo que esteja se sentindo infeliz e inseguro.",
-                afirmacao: "Continuei no relacionamento e minha situação piorou cada vez mais. Sofri abuso psicológico e precisei de ajuda profissional para me recuperar."
+                texto: "Permanece na relação por medo do término ou na esperança de que a outra pessoa mude.",
+                afirmacao: "Continuar em um ambiente tóxico comprometeu sua autoestima e exigiu um longo processo de reconstrução pessoal. "
             },
             {
-                texto: "Termina o relacionamento e busca apoio de amigos e familiares, buscando ajuda profissional de um psicólogo ou terapeuta de casais.",
-                afirmacao: "Terminei o relacionamento e me senti aliviado por ter tomado a decisão certa. Busquei apoio de meus amigos e familiares e comecei a me recuperar da experiência traumática. Com o apoio de um psicólogo, aprendi a identificar relacionamentos abusivos e a me proteger no futuro."
+                texto: "Decide encerrar o relacionamento e busca suporte na sua rede de apoio e em acompanhamento terapêutico.",
+                afirmacao: "Estabelecer limites e romper com a dinâmica abusiva trouxe de volta sua autonomia e liberdade emocional. "
             }
         ]
     },
     {
-        enunciado: "Você está se sentindo ansioso e com medo de situações que antes eram comuns para você. Você tem ataques de pânico frequentes e evita sair de casa. O que você faz?",
+        enunciado: "Crises de ansiedade e o medo constante de certas situações começam a limitar sua rotina e suas saídas de casa. Como encara isso?",
         alternativas: [
             {
-                texto: "Ignora seus sintomas e tenta lidar com eles por conta própria.",
-                afirmacao: "Continuei sofrendo com os sintomas da ansiedade e minha qualidade de vida piorou cada vez mais. Precisei de ajuda profissional para lidar com o problema."
+                texto: "Tenta lidar com os sintomas por conta própria e evita encarar os gatilhos emocionais.",
+                afirmacao: "Ignorar os sinais da ansiedade fez com que o medo passasse a governar suas escolhas diárias por um longo tempo. "
             },
             {
-                texto: "Busca ajuda profissional de um psicólogo ou psiquiatra para tratar a ansiedade.",
-                afirmacao: "Procurei ajuda profissional e, com o apoio de um psicólogo, aprendi a controlar minha ansiedade e melhorei minha qualidade de vida. Consegui voltar a fazer as coisas que eu gostava."
+                texto: "Busca auxílio especializado para entender as causas da ansiedade e aprender a gerenciar as crises.",
+                afirmacao: "Com o tratamento adequado, você compreendeu seus gatilhos e retomou o controle sobre sua própria trajetória. "
             }
         ]
     },
     {
-        enunciado: "Você está se sentindo sobrecarregado com as pressões do dia a dia, trabalho, estudos e vida pessoal. Você sente que não está conseguindo dar conta de tudo e isso está afetando sua saúde mental. O que você faz? ",
+        enunciado: "As pressões diárias de trabalho, estudos e vida pessoal acumulam de forma sufocante. O cansaço físico e mental é extremo. Qual é a sua decisão?",
         alternativas: [
             {
-                texto: "Continua seguindo sua rotina mesmo que isso esteja te fazendo mal.",
-                afirmacao: "Continuei me sobrecarregando e minha saúde mental piorou cada vez mais. Precisei de ajuda profissional para lidar com as consequências."
+                texto: "Mantém a rotina acelerada e ignora o esgotamento para não parecer improdutivo.",
+                afirmacao: "Ignorar o limite do próprio corpo resultou em um colapso emocional, provando que o descanso também é essencial."
             },
             {
-                texto: " Implementa mudanças em sua rotina para ter mais tempo para si mesmo, como fazer exercícios físicos, dormir bem e se alimentar de forma saudável, buscando ajuda profissional de um psicólogo se necessário.",
-                afirmacao: "Fiz mudanças na minha rotina para ter mais tempo para mim mesmo e isso me ajudou a me sentir mais disposto e com mais energia. Também consegui melhorar minha qualidade de vida no geral. Se necessário, busquei ajuda profissional de um psicólogo para lidar com o estresse e a ansiedade de forma mais eficaz."
+                texto: "Reorganiza prioridades, estabelece limites saudáveis e inclui pausas reais no seu dia a dia.",
+                afirmacao: "Priorizar seu bem-estar e redefinir seus limites transformou sua relação com o tempo e com a produtividade."
             }
         ]
-    },
+    }
 ];
-
 
 let atual = 0;
 let perguntaAtual;
@@ -105,7 +104,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Reflexão sobre a sua jornada:";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
